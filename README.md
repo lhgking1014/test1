@@ -1,18 +1,18 @@
 ﻿# test1
 
-## Timer showcase
-- Impact clock face with AM/PM emphasis, millisecond readout, and punchy tick/minute animations.
-- Inline language toggle (Korean, English, Japanese) rewrites labels and accessibility copy on the fly.
-- Clickable world map with major cities that retarget the clock and highlight day versus night.
-- Dynamic day/night terminator sweeps across the map in sync with real UTC time.
-- Timezone label shows the city, IANA identifier, and precise GMT offset.
+## 타이머 하이라이트
+- AM/PM을 강조한 시계 페이스와 밀리초 표시, 초/분이 바뀔 때 타격감 있는 애니메이션.
+- 언어 토글(한국어, 영어, 일본어)로 라벨과 접근성 문구가 즉시 변경.
+- 주요 도시 클릭이 가능한 세계 지도에서 타임존을 바꾸고, 현재 밤/낮 상태를 확인.
+- UTC 시간에 맞춰 움직이는 일출·일몰 경계가 지도 위를 가로지름.
+- 도시 이름, IANA 타임존, 정확한 GMT 오프셋을 함께 보여주는 타임존 배지.
 
-## Getting started
-1. Open `timer/index.html` in your browser.
-2. Click the language pill to cycle through the supported languages.
-3. Hover or tap on a city marker to check whether it is currently in day or night, then click to lock that timezone into the clock.
+## 시작하기
+1. 브라우저에서 `timer/index.html` 파일을 엽니다.
+2. 언어 토글 버튼을 눌러 지원 언어를 순환합니다.
+3. 도시 마커에 커서를 올리거나 탭해 밤/낮 상태를 확인한 뒤, 클릭하여 해당 타임존을 적용합니다.
 
-## Customisation tips
-- Add more cities by extending the `cities` array in `timer/timer.js` with coordinates (0–100 for X/Y), the IANA timezone, and display names per language.
-- Tweak the animation styles, day/night rules, or gradients from `timer/styles.css` to match your branding.
-- The layout responds down to tablet widths; adjust the grid or spacing tokens in the `.app` ruleset if you need a denser mobile experience.
+## 커스터마이징 팁
+- `timer/timer.js`의 `cities` 배열에 좌표(0~100 범위), IANA 타임존, 언어별 도시명을 추가하면 도시를 더 늘릴 수 있습니다.
+- `timer/styles.css`에서 애니메이션, 주야 판정 규칙, 그라데이션 등을 조정하여 원하는 분위기로 바꿔보세요.
+- `.app` 규칙의 그리드 및 간격 값을 조정하면 태블릿 이하 화면에서 더욱 조밀한 레이아웃을 만들 수 있습니다.
