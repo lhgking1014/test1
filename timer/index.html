@@ -27,17 +27,55 @@
         </section>
         <section class="map" aria-label="Timezone world map">
             <div class="map__canvas" id="world-map">
-                <svg class="map__svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <svg class="map__svg" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <defs>
-                        <linearGradient id="continent-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#9dbdfd" stop-opacity="0.9" />
-                            <stop offset="100%" stop-color="#6c8cff" stop-opacity="0.65" />
+                        <linearGradient id="ocean-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0f1b3d" />
+                            <stop offset="55%" stop-color="#183c6d" />
+                            <stop offset="100%" stop-color="#1b4b7f" />
                         </linearGradient>
+                        <linearGradient id="continent-glow" x1="20%" y1="15%" x2="80%" y2="85%">
+                            <stop offset="0%" stop-color="#cfe6ff" />
+                            <stop offset="50%" stop-color="#94b7ff" />
+                            <stop offset="100%" stop-color="#5f7df5" />
+                        </linearGradient>
+                        <radialGradient id="seoul-glow" cx="50%" cy="45%" r="60%">
+                            <stop offset="0%" stop-color="#fde68a" stop-opacity="0.9" />
+                            <stop offset="60%" stop-color="#facc15" stop-opacity="0.35" />
+                            <stop offset="100%" stop-color="#facc15" stop-opacity="0" />
+                        </radialGradient>
+                        <filter id="land-shadow" x="-15%" y="-15%" width="130%" height="130%">
+                            <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.35" />
+                        </filter>
                     </defs>
-                    <g class="map__land">
-                        <path d="M120 95 C90 160 110 200 150 230 C200 270 180 330 130 340 C110 360 150 390 210 370 C280 350 260 310 240 270 C220 230 260 190 300 180 C330 170 320 130 260 115 C220 105 170 90 120 95 Z" />
-                        <path d="M360 140 C420 100 500 80 560 110 C620 140 660 160 700 150 C740 140 770 160 745 195 C720 230 770 250 810 250 C850 250 870 270 845 310 C820 350 780 370 730 370 C690 370 660 390 650 420 C640 450 600 460 560 440 C520 420 500 370 460 350 C420 330 420 290 440 260 C460 230 420 210 380 210 C340 210 320 190 360 140 Z" />
-                        <path d="M750 360 C780 350 820 360 845 385 C870 410 850 440 805 440 C760 440 730 415 750 360 Z" />
+                    <rect class="map__ocean" x="0" y="0" width="1200" height="600" />
+                    <g class="map__graticule" stroke-linecap="round">
+                        <line x1="0" y1="120" x2="1200" y2="120" />
+                        <line x1="0" y1="240" x2="1200" y2="240" />
+                        <line x1="0" y1="360" x2="1200" y2="360" />
+                        <line x1="0" y1="480" x2="1200" y2="480" />
+                        <line x1="150" y1="0" x2="150" y2="600" />
+                        <line x1="350" y1="0" x2="350" y2="600" />
+                        <line x1="550" y1="0" x2="550" y2="600" />
+                        <line x1="750" y1="0" x2="750" y2="600" />
+                        <line x1="950" y1="0" x2="950" y2="600" />
+                    </g>
+                    <g class="map__land" filter="url(#land-shadow)">
+                        <path d="M104 296 C88 248 112 188 170 146 C226 104 318 90 382 108 C438 122 492 96 560 86 C650 72 742 106 800 154 C844 190 878 238 888 292 C898 350 866 402 814 426 C764 448 706 422 662 396 C624 372 586 372 548 392 C510 412 468 420 428 398 C396 380 370 350 332 342 C292 334 268 364 240 390 C210 418 178 410 156 370 C132 328 118 342 104 296 Z" />
+                        <path d="M440 224 C490 200 552 204 594 248 C636 292 648 360 634 420 C620 480 578 520 528 536 C482 550 436 520 414 470 C392 420 386 348 400 292 C408 260 418 236 440 224 Z" />
+                        <path d="M16 210 C30 154 80 114 140 102 C202 88 246 108 270 146 C296 188 300 240 278 288 C254 340 206 378 150 392 C84 410 24 366 10 304 C4 278 6 242 16 210 Z" />
+                        <path d="M1080 112 C1126 82 1176 82 1198 110 C1216 132 1210 170 1184 210 C1160 246 1122 276 1076 296 C1036 314 996 304 968 270 C932 226 948 170 998 132 C1028 108 1048 126 1080 112 Z" />
+                        <path d="M986 320 C1034 322 1076 348 1098 388 C1120 428 1114 470 1084 498 C1044 536 976 552 914 540 C866 530 828 492 822 446 C816 400 844 360 894 340 C930 326 950 318 986 320 Z" />
+                        <path d="M644 402 C696 382 750 388 788 420 C830 454 846 514 826 558 C804 604 742 620 692 606 C646 594 616 554 612 504 C608 454 620 420 644 402 Z" />
+                        <path d="M440 494 C468 480 498 492 520 516 C540 538 544 566 530 586 C510 612 468 624 430 618 C396 612 372 584 370 552 C368 520 398 506 440 494 Z" />
+                        <path d="M564 214 C594 190 642 184 676 202 C710 220 726 258 716 296 C704 340 660 354 616 336 C580 322 550 302 538 270 C530 248 542 228 564 214 Z" />
+                        <path d="M760 202 C804 178 858 176 898 206 C940 236 956 288 940 326 C922 368 876 382 830 364 C784 344 756 306 748 266 C742 234 736 222 760 202 Z" />
+                    </g>
+                    <g class="map__focus" aria-hidden="true">
+                        <circle class="map__focus-glow" cx="600" cy="260" r="120" />
+                        <circle class="map__focus-ring" cx="600" cy="260" r="108" />
+                        <circle class="map__focus-ring" cx="600" cy="260" r="78" />
+                        <path class="map__korea" d="M568 248 C580 226 612 220 632 236 C652 252 656 278 640 300 C626 320 602 326 582 314 C562 302 554 274 568 248 Z" />
                     </g>
                 </svg>
                 <div class="map__terminator" id="map-terminator" aria-hidden="true"></div>

@@ -53,7 +53,7 @@ const cities = [
         id: "seoul",
         abbr: "SEL",
         timeZone: "Asia/Seoul",
-        coordinates: { x: 82, y: 42 },
+        coordinates: { x: 50, y: 44 },
         names: {
             "ko-KR": "서울",
             "en-US": "Seoul",
@@ -64,7 +64,7 @@ const cities = [
         id: "tokyo",
         abbr: "TYO",
         timeZone: "Asia/Tokyo",
-        coordinates: { x: 86, y: 40 },
+        coordinates: { x: 56, y: 45 },
         names: {
             "ko-KR": "도쿄",
             "en-US": "Tokyo",
@@ -75,7 +75,7 @@ const cities = [
         id: "sydney",
         abbr: "SYD",
         timeZone: "Australia/Sydney",
-        coordinates: { x: 90, y: 70 },
+        coordinates: { x: 64, y: 78 },
         names: {
             "ko-KR": "시드니",
             "en-US": "Sydney",
@@ -86,7 +86,7 @@ const cities = [
         id: "dubai",
         abbr: "DXB",
         timeZone: "Asia/Dubai",
-        coordinates: { x: 72, y: 50 },
+        coordinates: { x: 38, y: 56 },
         names: {
             "ko-KR": "두바이",
             "en-US": "Dubai",
@@ -97,7 +97,7 @@ const cities = [
         id: "mumbai",
         abbr: "BOM",
         timeZone: "Asia/Kolkata",
-        coordinates: { x: 76, y: 55 },
+        coordinates: { x: 41, y: 53 },
         names: {
             "ko-KR": "뭄바이",
             "en-US": "Mumbai",
@@ -108,7 +108,7 @@ const cities = [
         id: "london",
         abbr: "LON",
         timeZone: "Europe/London",
-        coordinates: { x: 56, y: 38 },
+        coordinates: { x: 22, y: 38 },
         names: {
             "ko-KR": "런던",
             "en-US": "London",
@@ -119,7 +119,7 @@ const cities = [
         id: "paris",
         abbr: "PAR",
         timeZone: "Europe/Paris",
-        coordinates: { x: 58, y: 42 },
+        coordinates: { x: 24, y: 41 },
         names: {
             "ko-KR": "파리",
             "en-US": "Paris",
@@ -130,7 +130,7 @@ const cities = [
         id: "newyork",
         abbr: "NYC",
         timeZone: "America/New_York",
-        coordinates: { x: 32, y: 44 },
+        coordinates: { x: 6, y: 45 },
         names: {
             "ko-KR": "뉴욕",
             "en-US": "New York",
@@ -141,7 +141,7 @@ const cities = [
         id: "losangeles",
         abbr: "LAX",
         timeZone: "America/Los_Angeles",
-        coordinates: { x: 24, y: 47 },
+        coordinates: { x: 2, y: 50 },
         names: {
             "ko-KR": "로스앤젤레스",
             "en-US": "Los Angeles",
@@ -152,7 +152,7 @@ const cities = [
         id: "santiago",
         abbr: "SCL",
         timeZone: "America/Santiago",
-        coordinates: { x: 30, y: 68 },
+        coordinates: { x: 8, y: 78 },
         names: {
             "ko-KR": "산티아고",
             "en-US": "Santiago",
