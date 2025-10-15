@@ -1,16 +1,50 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ω«Ω√∞£ ≈∏¿Ã∏”</title>
+    <title>World Timer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="clock" role="main" aria-live="polite">
-        <div class="clock__date" id="clock-date">--</div>
-        <p class="clock__time" id="clock-time">00:00:00</p>
-        <div class="clock__timezone" id="clock-timezone"></div>
+    <main class="app" role="main">
+        <section class="clock" aria-live="polite">
+            <header class="clock__header">
+                <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span id="language-label">Korean</span>
+                </button>
+                <div class="clock__timezone" id="clock-timezone">Asia/Seoul (GMT+09:00)</div>
+            </header>
+            <div class="clock__date" id="clock-date">--</div>
+            <div class="clock__time">
+                <span class="clock__ampm" id="clock-ampm">AM</span>
+                <span class="clock__digits" id="clock-digits">00:00:00</span>
+            </div>
+            <div class="clock__ms" id="clock-ms">000</div>
+            <div class="clock__meta">
+                <span id="clock-selected">Seoul local time</span>
+            </div>
+        </section>
+        <section class="map" aria-label="Timezone world map">
+            <div class="map__canvas" id="world-map">
+                <svg class="map__svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="continent-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9dbdfd" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="#6c8cff" stop-opacity="0.65" />
+                        </linearGradient>
+                    </defs>
+                    <g class="map__land">
+                        <path d="M120 95 C90 160 110 200 150 230 C200 270 180 330 130 340 C110 360 150 390 210 370 C280 350 260 310 240 270 C220 230 260 190 300 180 C330 170 320 130 260 115 C220 105 170 90 120 95 Z" />
+                        <path d="M360 140 C420 100 500 80 560 110 C620 140 660 160 700 150 C740 140 770 160 745 195 C720 230 770 250 810 250 C850 250 870 270 845 310 C820 350 780 370 730 370 C690 370 660 390 650 420 C640 450 600 460 560 440 C520 420 500 370 460 350 C420 330 420 290 440 260 C460 230 420 210 380 210 C340 210 320 190 360 140 Z" />
+                        <path d="M750 360 C780 350 820 360 845 385 C870 410 850 440 805 440 C760 440 730 415 750 360 Z" />
+                    </g>
+                </svg>
+                <div class="map__terminator" id="map-terminator" aria-hidden="true"></div>
+                <div class="map__cities" id="map-cities" role="listbox" aria-label="Time zone cities"></div>
+            </div>
+            <p class="map__hint" id="map-hint">Click a city to change the clock.</p>
+        </section>
     </main>
     <script src="timer.js"></script>
 </body>

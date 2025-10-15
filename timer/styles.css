@@ -1,6 +1,10 @@
-:root {
+﻿:root {
     color-scheme: light dark;
     font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -9,57 +13,356 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at top, #f0f4ff, #d9e4ff 60%, #c3d3ff);
-    transition: background 0.6s ease;
+    background: radial-gradient(circle at top, #e8f1ff 0%, #cbd9ff 55%, #b1c5ff 100%);
+    color: #0f172a;
+    transition: background 0.8s ease;
+}
+
+.app {
+    width: min(1040px, 92vw);
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    padding: 32px 0;
 }
 
 .clock {
-    text-align: center;
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 18px;
-    box-shadow: 0 12px 24px rgba(31, 42, 94, 0.2);
-    padding: 32px 48px;
-    max-width: 320px;
-    width: 90%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.82);
+    border-radius: 24px;
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.22);
+    padding: 40px 48px;
+    overflow: hidden;
 }
 
-.clock__date {
-    font-size: 1.125rem;
-    letter-spacing: 0.04em;
-    color: #4b5563;
-    margin-bottom: 12px;
+.clock::after {
+    content: "";
+    position: absolute;
+    inset: -40% -20% 60% 50%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.18), transparent 70%);
+    pointer-events: none;
+    transform: rotate(-6deg);
 }
 
-.clock__time {
-    font-size: clamp(3rem, 8vw, 4.25rem);
+.clock__header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.language-toggle {
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #4c6ef5, #7c3aed);
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #111827;
-    margin: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(76, 110, 245, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(76, 110, 245, 0.45);
+    outline: none;
 }
 
 .clock__timezone {
-    margin-top: 16px;
     font-size: 0.95rem;
-    color: #6b7280;
+    color: #475569;
+    font-weight: 600;
+}
+
+.clock__date {
+    position: relative;
+    z-index: 1;
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.clock__time {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.clock__ampm {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: #1d4ed8;
+    text-transform: uppercase;
+}
+
+.clock__digits {
+    font-size: clamp(3.8rem, 8vw, 5.1rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #111827;
+    text-shadow: 0 14px 28px rgba(30, 64, 175, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.clock__digits.tick-impact {
+    animation: slam 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clock__digits.minute-impact {
+    animation: quake 0.48s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clock__ms {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.clock__meta {
+    position: relative;
+    z-index: 1;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.map {
+    position: relative;
+    display: grid;
+    gap: 18px;
+}
+
+.map__canvas {
+    position: relative;
+    border-radius: 28px;
+    background: linear-gradient(160deg, rgba(15, 23, 42, 0.92), rgba(59, 130, 246, 0.62));
+    box-shadow: 0 24px 48px rgba(30, 64, 175, 0.3);
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+}
+
+.map__svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.map__land path {
+    fill: url(#continent-glow);
+    stroke: rgba(255, 255, 255, 0.35);
+    stroke-width: 3;
+    filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.35));
+}
+
+.map__terminator {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(8, 47, 73, 0.82) 0%, rgba(14, 165, 233, 0.05) 40%, rgba(244, 244, 245, 0) 50%, rgba(99, 102, 241, 0.15) 70%, rgba(8, 47, 73, 0.65) 100%);
+    mix-blend-mode: multiply;
+    transform-origin: center;
+    pointer-events: none;
+    transition: transform 0.6s ease;
+}
+
+.map__cities {
+    position: absolute;
+    inset: 0;
+}
+
+.city-marker {
+    position: absolute;
+    left: calc(var(--x) * 1%);
+    top: calc(var(--y) * 1%);
+    transform: translate(-50%, -50%);
+    border: none;
+    background: #f8fafc;
+    color: #0f172a;
+    border-radius: 50%;
+    width: clamp(26px, 4vw, 34px);
+    height: clamp(26px, 4vw, 34px);
+    display: grid;
+    place-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.35);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.city-marker:hover,
+.city-marker:focus-visible {
+    transform: translate(-50%, -50%) scale(1.12);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.45);
+    outline: none;
+}
+
+.city-marker--night {
+    background: rgba(30, 41, 59, 0.82);
+    color: #e0f2fe;
+}
+
+.city-marker--active {
+    background: #facc15;
+    color: #1e293b;
+}
+
+.city-marker--active::after {
+    content: "";
+    position: absolute;
+    inset: -18px;
+    border-radius: 50%;
+    border: 2px solid rgba(250, 204, 21, 0.65);
+    animation: pulse 1.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    pointer-events: none;
+}
+
+.map__hint {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@keyframes slam {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 14px 28px rgba(30, 64, 175, 0.15);
+    }
+    35% {
+        transform: scale(1.12);
+        text-shadow: 0 18px 40px rgba(30, 64, 175, 0.45);
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 14px 28px rgba(30, 64, 175, 0.15);
+    }
+}
+
+@keyframes quake {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-6px);
+    }
+    40% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(-4px);
+    }
+    80% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+    .clock {
+        padding: 32px 28px;
+    }
+
+    .clock__time {
+        gap: 12px;
+    }
+
+    .app {
+        gap: 24px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: radial-gradient(circle at top, #1f2330, #111827 60%, #0b121c);
+        background: radial-gradient(circle at top, #0f172a 0%, #111c40 55%, #0b1433 100%);
+        color: #f8fafc;
     }
 
     .clock {
-        background: rgba(17, 24, 39, 0.72);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+        background: rgba(15, 23, 42, 0.82);
+        box-shadow: 0 28px 56px rgba(0, 0, 0, 0.35);
     }
 
+    .clock__digits {
+        color: #f8fafc;
+    }
+
+    .clock__ampm {
+        color: #93c5fd;
+    }
+
+    .clock__timezone,
     .clock__date,
-    .clock__timezone {
-        color: #d1d5db;
+    .clock__meta {
+        color: #cbd5f5;
     }
 
-    .clock__time {
-        color: #f9fafb;
+    .language-toggle {
+        background: linear-gradient(135deg, #38bdf8, #6366f1);
+    }
+
+    .clock__digits.tick-impact,
+    .clock__digits.minute-impact {
+        text-shadow: 0 20px 44px rgba(56, 189, 248, 0.35);
+    }
+
+    .map__hint {
+        color: #cbd5f5;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
