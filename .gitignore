@@ -1,0 +1,34 @@
+# General Python artifacts
+__pycache__/
+*.pyc
+
+# Streamlit cache
+.streamlit/
+
+# Limit committed dataset to a lightweight sample
+car_picker/data/**
+!car_picker/data/
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_aWg.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Bbw.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Cvl.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_eeu.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_gQW.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Gzs.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_kMx.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Mro.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Ofi.jpg
+!car_picker/data/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_onJ.jpg
+
+car_picker/thumbs/**
+!car_picker/thumbs/
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_aWg.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Bbw.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Cvl.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_eeu.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_gQW.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Gzs.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_kMx.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Mro.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Ofi.jpg
+!car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_onJ.jpg
+
