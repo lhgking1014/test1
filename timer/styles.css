@@ -1,0 +1,65 @@
+:root {
+    color-scheme: light dark;
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #f0f4ff, #d9e4ff 60%, #c3d3ff);
+    transition: background 0.6s ease;
+}
+
+.clock {
+    text-align: center;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(31, 42, 94, 0.2);
+    padding: 32px 48px;
+    max-width: 320px;
+    width: 90%;
+}
+
+.clock__date {
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+.clock__time {
+    font-size: clamp(3rem, 8vw, 4.25rem);
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.clock__timezone {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: radial-gradient(circle at top, #1f2330, #111827 60%, #0b121c);
+    }
+
+    .clock {
+        background: rgba(17, 24, 39, 0.72);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .clock__date,
+    .clock__timezone {
+        color: #d1d5db;
+    }
+
+    .clock__time {
+        color: #f9fafb;
+    }
+}
