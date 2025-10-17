@@ -6,6 +6,7 @@ from datetime import datetime
 from typing import Dict, List, Tuple
 
 import pandas as pd
+from streamlit import runtime
 import streamlit as st
 
 from fetch_news import DATA_PATH, KST, collect_news, ensure_data_directory, write_news
@@ -236,5 +237,18 @@ def main() -> None:
         render_saved_evaluations(evaluations)
 
 
+def _running_inside_streamlit() -> bool:
+    """Return True when the script is executed via `streamlit run`."""
+
+    try:
+        return runtime.exists()
+    except Exception:
+        return False
+
+
 if __name__ == "__main__":
-    main()
+    if _running_inside_streamlit():
+        main()
+    else:
+        print("이 앱은 Streamlit 명령으로 실행해야 합니다.")
+        print("streamlit run Tesla_news/streamlit_app.py")
