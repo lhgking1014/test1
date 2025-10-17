@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 from datetime import datetime
-from typing import Dict, List, Tuple
+from typing import Dict, List, Set, Tuple
 
 import pandas as pd
 from streamlit import runtime
@@ -12,19 +12,39 @@ import streamlit as st
 from fetch_news import DATA_PATH, KST, collect_news, ensure_data_directory, write_news
 
 EVALUATIONS_PATH = DATA_PATH.parent / "evaluations.json"
+EVALUATIONS_CSV_PATH = DATA_PATH.parent / "evaluations.csv"
 
 
-def _load_news_payload(force_refresh: bool = False) -> Dict:
+def _collect_and_store_news(exclude_keys: Set[str] | None = None) -> Tuple[Dict, int]:
+    """Collect Tesla news items, optionally excluding specific keys, and persist them."""
+    items = collect_news()
+    removed_count = 0
+    if exclude_keys:
+        filtered_items = []
+        for item in items:
+            key = item.url or item.title
+            if key and key in exclude_keys:
+                removed_count += 1
+                continue
+            filtered_items.append(item)
+        items = filtered_items
+    payload = write_news(items)
+    return payload, removed_count
+
+
+def _load_news_payload(force_refresh: bool = False, exclude_keys: Set[str] | None = None) -> Dict:
     """Return cached Tesla news payload, refreshing if requested or missing."""
     ensure_data_directory()
     if force_refresh:
-        return write_news(collect_news())
+        payload, _ = _collect_and_store_news(exclude_keys)
+        return payload
     if DATA_PATH.exists():
         try:
             return json.loads(DATA_PATH.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             st.warning("저장된 뉴스 데이터가 손상되어 새로 불러옵니다.")
-    return write_news(collect_news())
+    payload, _ = _collect_and_store_news(exclude_keys)
+    return payload
 
 
 def _load_evaluations() -> Dict:
@@ -49,7 +69,42 @@ def _save_evaluations(entries: List[Dict]) -> Dict:
         json.dumps(payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    df = pd.DataFrame(entries)
+    if df.empty:
+        df = pd.DataFrame(
+            columns=[
+                "title",
+                "source",
+                "url",
+                "summary",
+                "relevance",
+                "reason",
+                "evaluated_at",
+            ]
+        )
+    df.to_csv(EVALUATIONS_CSV_PATH, index=False, encoding="utf-8-sig")
     return payload
+
+
+def extract_low_relevance_keys(evaluations: Dict) -> Set[str]:
+    keys: Set[str] = set()
+    for entry in evaluations.get("items", []):
+        if entry.get("relevance") != "low":
+            continue
+        key = entry.get("url") or entry.get("title")
+        if key:
+            keys.add(key)
+    return keys
+
+
+def reset_rating_state() -> None:
+    """Clear cached rating values so new articles start fresh."""
+    prefixes = ("rating_value_", "reason_", "radio_")
+    to_delete = [
+        key for key in list(st.session_state.keys()) if any(key.startswith(prefix) for prefix in prefixes)
+    ]
+    for key in to_delete:
+        del st.session_state[key]
 
 
 def format_timestamp(raw: str | None) -> str:
@@ -67,17 +122,23 @@ def format_timestamp(raw: str | None) -> str:
 
 
 def initialise_state() -> Tuple[Dict, Dict]:
-    if "news_payload" not in st.session_state:
-        st.session_state["news_payload"] = _load_news_payload()
     if "evaluations_payload" not in st.session_state:
         st.session_state["evaluations_payload"] = _load_evaluations()
+    evaluations_payload = st.session_state["evaluations_payload"]
+    if "news_payload" not in st.session_state:
+        low_keys = extract_low_relevance_keys(evaluations_payload)
+        st.session_state["news_payload"] = _load_news_payload(exclude_keys=low_keys)
     return st.session_state["news_payload"], st.session_state["evaluations_payload"]
 
 
-def refresh_news() -> None:
+def refresh_news(exclude_keys: Set[str] | None = None) -> None:
     with st.spinner("최신 뉴스를 불러오는 중..."):
-        st.session_state["news_payload"] = _load_news_payload(force_refresh=True)
+        payload, removed_count = _collect_and_store_news(exclude_keys)
+        st.session_state["news_payload"] = payload
+        reset_rating_state()
     st.success("뉴스를 새로고침했습니다.")
+    if exclude_keys and removed_count:
+        st.info(f"관련성이 낮다고 평가된 {removed_count}건의 기사를 제외했습니다.")
 
 
 def render_news_items(items: List[Dict], existing_map: Dict[str, Dict]) -> None:
@@ -205,7 +266,9 @@ def main() -> None:
         st.header("데이터 관리")
         st.text(f"뉴스 갱신 시각: {format_timestamp(news_payload.get('updated_at'))}")
         if st.button("뉴스 새로고침", use_container_width=True):
-            refresh_news()
+            latest_evaluations = st.session_state.get("evaluations_payload", evaluations)
+            low_relevance_keys = extract_low_relevance_keys(latest_evaluations)
+            refresh_news(low_relevance_keys)
             news_payload = st.session_state["news_payload"]
         st.text(f"평가 갱신 시각: {format_timestamp(evaluations.get('updated_at'))}")
 
