@@ -1,0 +1,10 @@
+Django>=5.1,<5.2
+djangorestframework>=3.15,<3.16
+django-allauth>=64.0,<65.0
+dj-rest-auth>=6.0,<7.0
+django-environ>=0.11,<0.12
+celery>=5.4,<5.5
+redis>=5.0,<6.0
+google-cloud-vision>=3.7,<3.8
+psycopg[binary]>=3.2,<3.3
+requests>=2.32,<2.33

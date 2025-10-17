@@ -32,3 +32,12 @@ car_picker/thumbs/**
 !car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_Ofi.jpg
 !car_picker/thumbs/Acura_ILX_2013_28_16_110_15_4_70_55_179_39_FWD_5_4_4dr_onJ.jpg
 
+# K-shoppingmall project artifacts
+K-shoppingmall/.env
+K-shoppingmall/.env.local
+K-shoppingmall/db.sqlite3
+K-shoppingmall/media/
+K-shoppingmall/staticfiles/
+
+!K-shoppingmall/.env.example
+

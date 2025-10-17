@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static humanize %}
+{% block title %}단청상회 | K-헤리티지 셀렉션{% endblock %}
+{% block content %}
+<section class="bg-gradient-to-b from-black via-gray-900 to-black text-center py-24">
+    <div class="max-w-3xl mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-yellow-300 tracking-widest">한국 전통의 아름다움, 단청상회</h1>
+        <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+            국립중앙박물관 단청 키보드에서 영감을 얻은 깊은 블랙과 단청 색채로 구성된 쇼핑 경험.
+            전통과 현대가 조화로운 리빙, 공예, 패션 아이템을 지금 만나보세요.
+        </p>
+        <a href="#catalog" class="inline-block mt-10 px-8 py-3 bg-yellow-500 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition">상품 둘러보기</a>
+    </div>
+</section>
+<section id="catalog" class="py-16 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-yellow-200 mb-8">추천 상품</h2>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {% for product in products %}
+            <div class="bg-gray-900 border border-yellow-800/50 rounded-lg overflow-hidden shadow-lg hover:shadow-yellow-700/50 transition">
+                {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="w-full h-56 object-cover">
+                {% else %}
+                <div class="w-full h-56 flex items-center justify-center text-gray-600 bg-gray-800">이미지 준비 중</div>
+                {% endif %}
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-yellow-200">{{ product.name }}</h3>
+                    <p class="text-sm text-gray-400 mt-2 line-clamp-3">{{ product.description|default:"설명이 곧 업데이트될 예정입니다." }}</p>
+                    <div class="mt-4 text-right text-yellow-300 font-bold">{{ product.price|intcomma }}원</div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-gray-400">등록된 상품이 없습니다. 관리자에서 상품을 추가해 주세요.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="bg-black py-16">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-left">
+        <div>
+            <h3 class="text-yellow-300 font-semibold text-lg mb-3">배송 안내</h3>
+            <p class="text-gray-400 text-sm">
+                결제 후 2~3영업일 이내 출고됩니다. 50,000원 이상 구매 시 무료 배송, 그 외 3,000원의 배송비가 부과됩니다.
+            </p>
+        </div>
+        <div>
+            <h3 class="text-yellow-300 font-semibold text-lg mb-3">교환 및 반품</h3>
+            <p class="text-gray-400 text-sm">
+                상품 수령 후 7일 이내 신청 가능합니다. 단순 변심 시 왕복 배송비는 고객 부담입니다.
+            </p>
+        </div>
+        <div>
+            <h3 class="text-yellow-300 font-semibold text-lg mb-3">고객 지원</h3>
+            <p class="text-gray-400 text-sm">
+                월-금 10:00~18:00 고객센터 운영. 이메일 support@k-shoppingmall.kr 또는 02-1234-5678로 연락 주세요.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
