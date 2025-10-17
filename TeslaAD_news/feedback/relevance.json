@@ -1,0 +1,483 @@
+{
+  "updated_at": "2025-10-17T14:48:15.083347+09:00",
+  "token_weights": {
+    "누가": -3.0,
+    "자율주행": -3.0,
+    "발목": -3.0,
+    "잡나": -3.0,
+    "정부": -3.0,
+    "규제": -6.0,
+    "부족한": -3.0,
+    "지원에": -3.0,
+    "주춤": -3.0,
+    "전기신문": -3.0,
+    "테슬라": -6.0,
+    "fsd": -6.0,
+    "v14까지": -3.0,
+    "나왔는데": -3.0,
+    "한국은": -3.0,
+    "로보택시": -3.0,
+    "언제쯤": -3.0,
+    "베타뉴스": -3.0,
+    "텍사스": 3.0,
+    "기가팩토리": 3.0,
+    "50만대": 3.0,
+    "생산": 3.0,
+    "돌파": 3.0,
+    "먼스터": 3.0,
+    "자동차": 3.0,
+    "업체들": 3.0,
+    "자율주행차": 0.0,
+    "실패": 3.0,
+    "간절히": 3.0,
+    "바랄": 3.0,
+    "benzinga": 3.0,
+    "tesla": 0.0,
+    "속도": -6.0,
+    "제한을": -3.0,
+    "뛰어넘는": -1.5,
+    "mad": -9.0,
+    "max": -9.0,
+    "완전": -1.5,
+    "모드": -10.0,
+    "재도입": -3.0,
+    "engadget": -3.0,
+    "뛰어": -1.5,
+    "넘는": -1.5,
+    "자율": -1.5,
+    "주행": -1.5,
+    "많은": 3.0,
+    "소유자에게": 3.0,
+    "새로운": -3.0,
+    "제품군": 3.0,
+    "출시": 3.0,
+    "확대": 3.0,
+    "teslarati": 3.0,
+    "자율주행차를": -3.0,
+    "목표로": -3.0,
+    "하는": -1.5,
+    "도로안전그룹": -1.5,
+    "wired": -3.0,
+    "도로": -1.5,
+    "안전": -1.5,
+    "그룹": -1.5,
+    "삼다": -1.5,
+    "손흥민": -3.0,
+    "심는다고": -3.0,
+    "넣나": -3.0,
+    "꺾은": -3.0,
+    "k자율주행": -3.0,
+    "비밀": -3.0,
+    "중앙일보": -3.0,
+    "fresno": -3.0,
+    "state": -3.0,
+    "tesla와": -3.0,
+    "협력하여": -1.5,
+    "기술": -3.0,
+    "선보여": -4.5,
+    "kmph": -3.0,
+    "파트너십을": -1.5,
+    "맺고": -1.5,
+    "제한": -3.0,
+    "무시하는": -3.0,
+    "매드맥스": -6.0,
+    "부활": -4.5,
+    "electrek": -3.0,
+    "완전자율주행": -1.5,
+    "다시": 0.0,
+    "모드로": -1.5,
+    "fsd를": -3.0,
+    "불량하게": -3.0,
+    "만들었습니다": -3.0,
+    "hotcars": -1.5,
+    "hotcars로": -1.5,
+    "tesla의": 3.0,
+    "자율주행차가": 3.0,
+    "공격을": 3.0,
+    "받고": 6.0,
+    "있습니다": 10.0,
+    "kurt": 3.0,
+    "the": 1.5,
+    "cyberguy": 3.0,
+    "또다시": 1.5,
+    "기술은": 3.0,
+    "위반으로": 3.0,
+    "계속": 3.0,
+    "조사를": 3.0,
+    "그렇다면": 3.0,
+    "허용됩니까": 3.0,
+    "cnn": 3.0,
+    "기차": 1.5,
+    "사고": 3.0,
+    "이후": 3.0,
+    "조사": 3.0,
+    "nbc": 3.0,
+    "news": 3.0,
+    "열차": 1.5,
+    "경찰": -3.0,
+    "영상에": -3.0,
+    "포착된": -3.0,
+    "스쿨버스": -3.0,
+    "위반": -3.0,
+    "시스템에": -3.0,
+    "불이": -3.0,
+    "붙다": -3.0,
+    "usa": -3.0,
+    "투데이": -3.0,
+    "waymo": 3.0,
+    "로봇택시": 10.0,
+    "경쟁이": 10.0,
+    "뜨거워지면서": 10.0,
+    "속도가": 3.0,
+    "빨라지고": 3.0,
+    "marketwatch": 10.0,
+    "waymo는": 9.0,
+    "속도를": 9.0,
+    "높이고": 9.0,
+    "초등학교": 3.0,
+    "2학년": 3.0,
+    "수준": 3.0,
+    "지디넷코리아": 3.0,
+    "한국의": -3.0,
+    "국토부": -3.0,
+    "토론회": -3.0,
+    "후폭풍": -3.0,
+    "제동": -3.0,
+    "아니다": -3.0,
+    "해명": -3.0,
+    "블로터": -3.0,
+    "강행": -3.0,
+    "디지털투데이": -3.0,
+    "때문에": 3.0,
+    "안사": 3.0,
+    "소비자": 3.0,
+    "35": 3.0,
+    "부정적": 3.0,
+    "조선일보": 3.0,
+    "논란의": -3.0,
+    "여지가": -3.0,
+    "있는": -3.0,
+    "모드가": -3.0,
+    "설명할": -3.0,
+    "없는": -3.0,
+    "이유로": -3.0,
+    "돌아왔습니다": -3.0,
+    "bgr": -3.0,
+    "com": -3.0
+  },
+  "article_feedback": {
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTE51MEJUaVQwUkZEZnFfWXJ0N29NbC10VmRxWWREX28xc2pINFpTMjBybHF3M0tRWXlOaS1paGlfaTdiZEVRMmtMb2tIMmNMWTExbC1adEpaZmFWWlZNQ2FqWDlIblFiVXBBM2pPZdIBcEFVX3lxTE5BbHU1b2RTWlhOeVJMNElOcGpKR2ZIdElmY1JfWHV1LURERTRQVkF6U0VLaGZHU0lVcWRoWEJvSE5Hby1VaEdfNmgyRHJGTHJlTGQtVjVlSklxcmxZUWllTnpuY0xwWW5TX2tybkU0Z2I?oc=5": {
+      "status": "low",
+      "title": "누가 자율주행 발목 잡나…정부 규제･부족한 지원에 주춤 - 전기신문",
+      "summary": "누가 자율주행 발목 잡나…정부 규제･부족한 지원에 주춤 전기신문",
+      "timestamp": "2025-10-17T10:52:24.807696+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYQjgzZDlkT3hqZ2RXaXhHZnF4Yk1ZOUMwOFFKelZhNjRyTHJRWlo1T2V4SHVjTnJ3Z0x1R0dxMkFlQzluRzN6LU4wb2hhUHdTQVJTcWZ1aTljUC1nQzNIZEFONWk?oc=5": {
+      "status": "low",
+      "title": "테슬라 FSD V14까지 나왔는데, 한국은 로보택시 언제쯤? - 베타뉴스",
+      "summary": "테슬라 FSD V14까지 나왔는데, 한국은 로보택시 언제쯤? 베타뉴스",
+      "timestamp": "2025-10-17T10:53:01.472722+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOSXU3T1hUeUFnZTJuRDVTc2dQVEpDa3Jjd0ZxWHByR3FCYm53ZmdrMUI2SWwzT3RHVkpXaXZCdlJHQVB5eTRCWmtZMFZocjdwdWhBMEdYek85Q3FaMGhDNEcxZFFMNkI1UV9HVEV0eDhrZk1oaEptXzV6cmltcjYwNU9jeG4tMVBQVzlQZk1aTXo1MnFuV1YwNTFudENYNDBQelZYTExtNkVkS1NzTk02eHpWV1p1LUotazhZNlJ5eW9wd2VuTkdYaElsSDA0ZS1kZlprc1ZVa0dHTDNrTWNlX01YR2pfdExMdXZMUHlxbXF4eWl1aTFpMmtxNmJiQkh3UEJjWXVZWnU5Y3dYMVQzUHhZR1EtczJhR29XckwzTlFpLUgyWVRDaFBmWHFaVnQzUXJqZW50SndzcVI2TkNobVBR?oc=5": {
+      "status": "high",
+      "title": "테슬라 텍사스 기가팩토리, 50만대 생산 돌파···진 먼스터 “자동차 업체들, 자율주행차 실패 간절히 바랄 것” - Benzinga",
+      "summary": "테슬라 텍사스 기가팩토리, 50만대 생산 돌파···진 먼스터 “자동차 업체들, 자율주행차 실패 간절히 바랄 것” Benzinga",
+      "timestamp": "2025-10-17T10:53:08.608368+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaDJzMmNpMkxmeWItc3hZQmFxdHRSM1JNTjA5ZFFrTWZaeG9YaEFoNl9XNkdOai1qYlZjcUs4X2lQU3JVaE5SaUNkM3AwVVR1X0ZEbnZ0UVNpWjR2S3duZ1pFb0QwRmViS2ZKekJxSlZuTVF1ZnNMNF9PQjYwc1l5QUxZVUphR3ZDWnNUZ19EQ3VmMEYyRWJJNWFhU0NGLVZaUlYyVDhqekxvR25XckVKZnRwbXA?oc=5": {
+      "status": "low",
+      "title": "Tesla, 속도 제한을 뛰어넘는 'Mad Max' 완전 자율주행 모드 재도입 - Engadget",
+      "summary": "Tesla, 속도 제한을 뛰어 넘는 'Mad Max' 완전 자율 주행 모드 재도입 Engadget",
+      "timestamp": "2025-10-17T14:48:15.083347+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR2RtTXpQdDRjNWVId1dtcktlQWVrUWNJWDlRT2VVdDdOWXZNQmtqUDI3YmxRMFVzLUhXYUcydS1WN0JPYjZTUmZRR214OGJMcTBDZktpc2xaVmtEcFQ1aUU2Q0o4Q2x5cjUteUY1Q2JxR0xTYzZ4Y293ZDhRdjI0N2dfLTlidXlmU3JmNjM2Y2M2dw?oc=5": {
+      "status": "high",
+      "title": "Tesla, 더 많은 소유자에게 새로운 완전 자율 주행 제품군 출시 확대 - Teslarati",
+      "summary": "Tesla, 더 많은 소유자에게 새로운 완전 자율 주행 제품군 출시 확대 Teslarati",
+      "timestamp": "2025-10-17T10:55:22.376694+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZkxobmcxbnlDcm1fT3ZmdUZZaHhReHVqVzRKWWlDWWpCbXh1clNDOXpuR0Z0QTl3YlBkNF96bDk2aVVlM2lWalpzdFl0aVdWS1ZGMUNKc1hVYzI1Sk03RzNrWjRpWVdhLUhneG1WTHJsZklGNkhGYzdsOXlvTGtrTVh0NUZja3M?oc=5": {
+      "status": "low",
+      "title": "자율주행차를 목표로 하는 새로운 도로안전그룹 - WIRED",
+      "summary": "새로운 도로 안전 그룹, 자율주행차를 목표로 삼다 WIRED",
+      "timestamp": "2025-10-17T10:55:48.669172+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjV2tGQkNjUGN1Wm9nNDRCUV9CUmJZZW5fdExwYVAzUmhFQ2QyNUViQmRkY1pWOElpVzBoRnNVdENSallBemw3WWZkMVZGZnllRWVCTXNR?oc=5": {
+      "status": "low",
+      "title": "손흥민 뇌 심는다고 골 넣나? 테슬라 꺾은 K자율주행 비밀 - 중앙일보",
+      "summary": "손흥민 뇌 심는다고 골 넣나? 테슬라 꺾은 K자율주행 비밀 중앙일보",
+      "timestamp": "2025-10-17T10:55:54.611527+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaUpRRFk5YzJGeGhReUNKR1Z1QTd3YlBRT2VYbktFNHpYbElmczFWc2M2YmU3ZnAwNEVxWEIzTTVEZG55UFZaa1ByVVZqSjY2VHdpbFF6RTNzdXFrVWRPeHdPWTdJS3JORjVtenFWWDA2d1g3YmNicWxGQW9jSE9oS2tQUlpoMmRCSDdZVHRhaTM2d1BzbkJpX182dzc?oc=5": {
+      "status": "low",
+      "title": "Fresno State, Tesla와 협력하여 자율주행 기술 선보여 - KMPH",
+      "summary": "Fresno State, Tesla와 파트너십을 맺고 자율주행 기술 선보여 KMPH",
+      "timestamp": "2025-10-17T11:24:21.663913+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaTZtWjNPVlF6TTh1aU9aR3NwV0NubGhYVjNzSWwzeHdSX1VKeU1jSzBMNXljNGFWb3VTc25xUTVHcm1CaDIyY1VFZEZjWEhzQ0RaWXZuSmpIWmJmQWtVZlJhdU5pY0NQOWxCbEotQzhfWE5QZ29iNEx4YXlNSGFQTWpEbmdlUjFfYWRzTFp0alFTdnc?oc=5": {
+      "status": "low",
+      "title": "테슬라, 속도 제한 무시하는 '매드맥스' '완전 자율주행' 모드 부활 - Electrek",
+      "summary": "테슬라, 속도 제한 무시하는 '매드맥스' '완전자율주행' 모드 다시 선보여 - Electrek",
+      "timestamp": "2025-10-17T10:56:28.748409+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcHZRV2FWUzlDYVFjUVJ5d3lTMlZvdnRyNXdqc2VoQ3Q5TlVjeGxxWi1pamRmaE1aREdMM0FLNGU3dUlDOEVnZkU1R2x1dHJNUWZNemdNQURjUXVEVW1GQXJTYWxtSWQ5NHN6c08yaDhGWGQyQmxuTG1oLWoyeDdIUzVUeVQtTXZKWThEMTZ0M3lxT0pLMFJNVGFpTnZ3U1dtdnhWbVBoWWY?oc=5": {
+      "status": "low",
+      "title": "Tesla, 새로운 \"Mad Max\" 모드로 FSD를 불량하게 만들었습니다 - HotCars",
+      "summary": "Tesla, 새로운 \"Mad Max\" 모드 HotCars로 FSD를 불량하게 만들었습니다.",
+      "timestamp": "2025-10-17T10:56:31.398400+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE55aGhCeWdYT1BkU0UtSF9pSmdPUnpDMTNIemVLWnByX3NPQzAzRnBIak10V1RBcXB0RUNpWk9TNXhMcnU2Rm13Mm16SDJYVzN1dF81MDZRVFFkd0pZRnZoOEdXal96THdmWkRoeEF2c0w3ZXVQQVVRdzA2VQ?oc=5": {
+      "status": "high",
+      "title": "Tesla의 자율주행차가 다시 공격을 받고 있습니다 - Kurt the CyberGuy",
+      "summary": "Tesla의 자율주행차가 또다시 공격을 받고 있습니다. CyberGuy Kurt",
+      "timestamp": "2025-10-17T11:16:48.486230+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCWUVTbVJhZ3h2OWtIUHdTLW41SVZJeW43TzM4Uko5VWlUSGVyalNtNlFZSzh3TjIzcUdIZS1rWkFHNDZXODFLajhpVWRKNFVCWk5PVTRfbjUyVXF6bVFfUncwRksyR0E3SktGbHZLR2kwTF9KUkJOZA?oc=5": {
+      "status": "high",
+      "title": "Tesla의 자율주행 기술은 안전 위반으로 계속 조사를 받고 있습니다. 그렇다면 왜 허용됩니까? - CNN",
+      "summary": "Tesla의 자율주행 기술은 안전 위반으로 계속 조사를 받고 있습니다. 그렇다면 왜 허용됩니까? CNN",
+      "timestamp": "2025-10-17T11:16:50.450957+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQczBVcDJ6UFBvaWduOGFXVWMwQWFCZmNHU2ZnMFltb2gwSWRXbnFrbkk4Z01tc016MXNsT1FGbV81enZQbDFOd19KN1pnNWxjOVpKdExVSmJ1SlExdnBPR1h5ZE5jWkFUd1k2ZEJrdHFrMVFOb3BfUDdCX2pHVjdzOUxmNWV4TnFxN01PY2djSk9IWUxlbjVmOHZ1eHdZYUczQm1obkxwaVhxYzlneXBsd0MtNNIBVkFVX3lxTFAwTVlsTnZVRVlyU19vQUxTeEg5Y1dfMklSbzgxYkxyRXQzVmxZaUhQZzVNTWwzS1BqVENpVUFOTktEOU80VnBEemk0ZDVOLTlNSG9NYlJ3?oc=5": {
+      "status": "high",
+      "title": "기차 사고 이후 Tesla 완전 자율주행 조사 중 - NBC News",
+      "summary": "열차 사고 이후 Tesla 완전 자율주행 조사 중 NBC News",
+      "timestamp": "2025-10-17T11:16:54.924790+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdDBHeFo0OVZDMDNSQ1lkOTNLMEZUM0ozaEJTQXlncjhxOElDOUlhQ0MwLXVIUDg2VnpGQmkxWXpxeWdIMjNFemdBMC1nSHVkamhVSFAzLThWX2tNdWREMEp2MWdDamNnRDlZT2lmVUJpbzFfbENNTEZhamlpdTloM3BVS2JqeEF0ZFJXY1E3QmU0cl9UdXVLUWp6R0ZQa2hCN1JRNWM5QXF3V183?oc=5": {
+      "status": "low",
+      "title": "경찰 영상에 포착된 스쿨버스 위반 후 자율주행차 시스템에 불이 붙다 - USA 투데이",
+      "summary": "경찰 영상에 포착된 스쿨버스 위반 후 자율주행차 시스템에 불이 붙다 USA 투데이",
+      "timestamp": "2025-10-17T11:16:57.478535+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMivwNBVV95cUxOdzl1RDR0d3I2YnF6ZUxFak9Na01QU3h2TmRIbVRVX1p0T2gySHQydDR0dXNUZVZOdUUyOW5wVEFlb29uOFd4WElkTE0xa3NNd1F6ckRQZ3FhUVZWSHVhWFRacVRJelRTVHk1Z0tOYzk1NnNyZENqX21QZDlMckpjT2RnNG9uX2J2Y080NUVlQ1ZaaXdaYlVLd0NjSXhDNDhZeWtMaVFkSGpFdUtiU2tvVF9tX1ZrakhVbUxCQS1KbXJvX2JZeHV1Q3cyS3hrbHJxdTZDa1Bsakx0a3V5cGNnYmxkX0JDaFNiQ0VVUnZoOHowb3Y0aDRUUWZ0bDFUWjU1b3hFdTJjVS0yYzhtamIxM21qNFp6bFpPY1c5WUdOZlhyblVUU3hBWGdSbnFFdTRPXzFMSklYV1BlN2E2Uk0xdVNkTFpzdzR4bkI2WFJRQTUwOEdHek15eFctNjlvT3U4MldlV2RNQW5NQkVHV2ZpVjM1dFNtN2pQRkVjSGw5djR0c1FTZXRHaXoxNHJkWDNKU1N5cms4N0NuUG5yYVhaY0lnaTAzYkpEVTcyUUR3WEh6blpfMm56YzhDbUh2bTQ?oc=5": {
+      "status": "high",
+      "title": "Waymo, 로봇택시 경쟁이 뜨거워지면서 속도가 빨라지고 있습니다 - MarketWatch",
+      "summary": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다. MarketWatch",
+      "timestamp": "2025-10-17T11:17:01.585528+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tZHZzc3I4TGlzU19Zb2pMQ1RQRnQ0eEdmYS1aVHRWS241bWExWDFJa2pheHh4SmpHZXpTeTRXcWNaeDlMVjlZRG5kN1RfZG1pd0d2SVJR?oc=5": {
+      "status": "high",
+      "title": "\"테슬라 '자율주행'은 초등학교 1~2학년 수준\" - 지디넷코리아",
+      "summary": "\"테슬라 '자율주행'은 초등학교 1~2학년 수준\" 지디넷코리아",
+      "timestamp": "2025-10-17T11:17:03.619932+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HaXpRUTVUa2xUZ1ZLZUFkcFc3Y1piZHF0bFZlQ1FMZjhNMUNWTW9PekVIZTNQcVNudlJ4Sl8wa1gzaVl0b01rcE9CUGdTUThIUzJuRmdaTU9pamtmbmRZakQxSktRQ0Zo0gFsQVVfeXFMTV82OXZEVUVxaTFJMFpGZTVEQ09FemNaS3hOdTZfMXhHd1BvWkd6cEdYbUlZTlZJdVZ0dFhpVG5Na0VIdFVDeUx3WjlXUzA5NC0yb0hhWE5LbngySzAybG1MLW8wRUpaRnEwWEhm?oc=5": {
+      "status": "low",
+      "title": "[한국의 자율주행] 국토부 토론회 후폭풍...'테슬라 FSD 제동 아니다' 해명 - 블로터",
+      "summary": "[한국의 자율주행] 국토부 토론회 후폭풍...'테슬라 FSD 제동 아니다' 해명 블로터",
+      "timestamp": "2025-10-17T11:17:59.777289+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oR1U1WWpGZHNkLWNmczEwdmpCY04yeldrN1VzNXhVOXpzQlV2NWIyZGdsY0lWNHZsNzY0YTRGay1GczRsczFpaU52cVF3V0EyNUpMRTN0SEw1WHcwb1FvVHY3QndnQVpLbXpaSUxOUk5PVXc?oc=5": {
+      "status": "low",
+      "title": "테슬라, '매드맥스 모드' 부활…자율주행 안전 규제 속 강행 - 디지털투데이",
+      "summary": "테슬라, '매드맥스 모드' 부활…자율주행 안전 규제 속 강행 디지털투데이",
+      "timestamp": "2025-10-17T11:18:06.630176+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOFg1dmE0YWJUUERNSm1nTWpxOFVNeDZsRlZIbGdJT0VHSFdLYVFfeFYtVW1FN05mdG5zV2lWbjRVb1dNYVlSYXluaWFPZWQwVkVwNjNjOTF1Y1VLT3BnNHJ3TUlJcUw3MVZpNTV2UFF0TXBjRFpIZ2RVSnF6MFBlS2IwUdIBlwFBVV95cUxPZVdXdjF6aW1pdGJSLW9OMzlTaTFNRnR1SHVPU1dWUG1STml5VXR6bWxrb1d3LTNnclNYUmxubWtYOVFNRl9KcGJEOXNWb0llR3U1YloxbnBzc1RUMGZSYjNkNlR0T2w3TW9pSHJVLVdPT3drLXhSWk1fZlM2b1gyQmVQYjl5b1B1cE9oeGdHeXgxeE5vQWFB?oc=5": {
+      "status": "high",
+      "title": "“자율주행 때문에 테슬라 안사” 美 소비자 35%가 부정적 - 조선일보",
+      "summary": "“자율주행 때문에 테슬라 안사” 美 소비자 35%가 부정적 조선일보",
+      "timestamp": "2025-10-17T11:18:29.370327+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMivwNBVV95cUxNNEp5OGtWZlRBcEJ1TDM4emJFWXp4T3g1MUEzeVBjNW1SaGxSYmRGSS11Mm5IYmM1VUxIU2pIQmJGREJhUHptU0xfV3A2UmFuQ1ZKTS1ieGt4Z1RZYmp0OGczM0ptVVlSbEw4c0s4NVVxR1FzeHNPQ3cxdFBpMTM2cGRFRDI0SkZkVG1odGRORDBLZ2dJb2VxUHhwaTh3OE5EaVYyS1llcUJvbU1qMkhVLThSSm1wTF9fbERheUk5dHg0OEZKc0VyRnVMc1ZwUldsYWM5SGRqNV8zRkZYNFptMXdCbm5oeF8tSldkLWpnZUltcHFGOVhkalJWRXNsMWx3emxBUXlSMW4zMTVualIwOG0yN1A1UzhDYnlkbEZFekM3OC1PSmFaYjBIZEZ1LUZ2cDBmanBEMnZEMlRKUVk4YjkwckZWYTNyLWpvYjYtQ3A3LTdpUVY3UUd0OHZyVnJfeFM4bTF0blhBUDVydWl4NjRWVmpiRTN3SDBvT2hLMU1QVXV4aU50ekh1cGk0NUpaaVRhTk5PdXB4dWZTR0xYQjhpLWxTQlVOa2hVQkUwWUxocEQydWJUa0ZueEoyZEk?oc=5": {
+      "status": "high",
+      "title": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다 - MarketWatch",
+      "summary": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다. MarketWatch",
+      "timestamp": "2025-10-17T11:18:32.561512+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMivwNBVV95cUxOVS1lbG1FQ1h4NnpQdm4yakFxRHFGajBsVUFaU1M2ZkxVcHZueGNsNlo4SDJka3ViNlQ0aFh4ckl4aGlJMlR1ekZRRy1ocE1KQkJkOXpXR0QwNmxsNkQxS0xKU3A0al9IaGpPNkR2aTVRbVBwaDFmcy1USmpuTTRGdTFKdWU5X2gwQWJvTlNxSGUwR092LW03V1FiZWZ1SDgwcktGYUZDbGdBRW5tMkVUSExINzNOeHU1MlNfU3o0QmVLRWY5elZDNzRuWFhlMDVqOW0xS2djR05YQldORXZXaDMzN0dCYVNWbUJLenRQTzhTNy1SYXI2dzF2b2wtUklTTV9UXzN2WXc4VVFqaldqajM1VFp6UjgyY0dFU2k1c1JiWnhQZmtYV3ZSZEtqMU5iUERJWjh2S1BYcmhZWG5wYW9PZkRPS1AzZ0UwYUhSN0JqNUZhNHAtdjJUWEktTzhTVDdlNW5ac2ktcFdXb0tBczlxLWYxZkNjRHlmRHF6dzN5cE9SNF8zR2tnS1YzcnZKVy1sZUlNXy1wWnBYUHlacW9IWmk2MXJfMjFzYXRpUjhlSklFa3VvVlVNU1NGVlU?oc=5": {
+      "status": "high",
+      "title": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다 - MarketWatch",
+      "summary": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다. MarketWatch",
+      "timestamp": "2025-10-17T11:23:47.792668+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMivwNBVV95cUxPTTZwSzlodU9HVDg4SzRpUnQ3RVFGQlVtd3dwSFJ1dFVaRjBJd2NJaWJlXy1jaEQ1dFpNWDNrTlU2MlZheDFPNjVTNUdJV3psWmNuQ1k5NmQweWpCVnpDNVJwb0pkUXJWLVc0TXNoYS1zU2dmVHR2T0tOSDNkaEQ4MTEzNVdmTE5sY3ZrUWd3eGVHOXRSWU4wS3VpbkdUYkJuNEdFamY4QWJseWhReGJjUzNMWkU5TDVfRDc3eXJMa1B4a0pKcnpaV2RPMzd5SlZKNm5sZ3NubDNWSjVMaURlQ2lnb1FLMXFvMzdCa0pTcVVTT0JrX01wZzJYTTR1RFlMODdGejdBdVZtTlhaaGpuTkh5U1BtUFRucGlzVmRMZ2phZ2NWUXY0ZGd4cFFFLUJONDZuNmRaQV9JaUNiZFVVbVBPS3NBMk5ZY1ZIM0tqUmV0eTNiWk5FQzdHVWpNNzkwZ3piZTkwaTFkdHh1WVhvNHRpMURkRE5KamxVWDFSd3Y2VjA5R2ZoQUpYY2R3aUF0QjctYmxyYnpFOEQ5WXFDWml5Y2ZhRFY1ZzJQZGwtVTJFNzMxMjN3TmFIMDNZRjg?oc=5": {
+      "status": "high",
+      "title": "Waymo, 로봇택시 경쟁이 뜨거워지면서 속도가 빨라지고 있습니다 - MarketWatch",
+      "summary": "Waymo는 로봇택시 경쟁이 뜨거워지면서 속도를 높이고 있습니다. MarketWatch",
+      "timestamp": "2025-10-17T11:33:26.729225+09:00",
+      "reason": null
+    },
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE1GSUVKTkxaeFJ5NGhtQmJicE16SHVMeDZnNUhvcHk2ZWhsdU1Ec3pMZmUzM3dfUTE1aWpnRWEtVXZKdUQ0cGwwUUlrWFRhaWZUcDV3cFZ5UU1LeWNnOXFUbkJkcjVTOWJHUm1KMkVSdzk2QkNGb2xuOGM5Q1dHZw?oc=5": {
+      "status": "low",
+      "title": "논란의 여지가 있는 Tesla의 'Mad Max' 완전 자율 주행 모드가 설명할 수 없는 이유로 돌아왔습니다 - bgr.com",
+      "summary": "논란의 여지가 있는 Tesla의 'Mad Max' 완전 자율 주행 모드가 설명할 수 없는 이유로 돌아왔습니다 bgr.com",
+      "timestamp": "2025-10-17T14:32:12.312400+09:00",
+      "reason": null
+    }
+  },
+  "history": [
+    {
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51MEJUaVQwUkZEZnFfWXJ0N29NbC10VmRxWWREX28xc2pINFpTMjBybHF3M0tRWXlOaS1paGlfaTdiZEVRMmtMb2tIMmNMWTExbC1adEpaZmFWWlZNQ2FqWDlIblFiVXBBM2pPZdIBcEFVX3lxTE5BbHU1b2RTWlhOeVJMNElOcGpKR2ZIdElmY1JfWHV1LURERTRQVkF6U0VLaGZHU0lVcWRoWEJvSE5Hby1VaEdfNmgyRHJGTHJlTGQtVjVlSklxcmxZUWllTnpuY0xwWW5TX2tybkU0Z2I?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:52:24.807696+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYQjgzZDlkT3hqZ2RXaXhHZnF4Yk1ZOUMwOFFKelZhNjRyTHJRWlo1T2V4SHVjTnJ3Z0x1R0dxMkFlQzluRzN6LU4wb2hhUHdTQVJTcWZ1aTljUC1nQzNIZEFONWk?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:53:01.472722+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOSXU3T1hUeUFnZTJuRDVTc2dQVEpDa3Jjd0ZxWHByR3FCYm53ZmdrMUI2SWwzT3RHVkpXaXZCdlJHQVB5eTRCWmtZMFZocjdwdWhBMEdYek85Q3FaMGhDNEcxZFFMNkI1UV9HVEV0eDhrZk1oaEptXzV6cmltcjYwNU9jeG4tMVBQVzlQZk1aTXo1MnFuV1YwNTFudENYNDBQelZYTExtNkVkS1NzTk02eHpWV1p1LUotazhZNlJ5eW9wd2VuTkdYaElsSDA0ZS1kZlprc1ZVa0dHTDNrTWNlX01YR2pfdExMdXZMUHlxbXF4eWl1aTFpMmtxNmJiQkh3UEJjWXVZWnU5Y3dYMVQzUHhZR1EtczJhR29XckwzTlFpLUgyWVRDaFBmWHFaVnQzUXJqZW50SndzcVI2TkNobVBR?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T10:53:08.609369+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaDJzMmNpMkxmeWItc3hZQmFxdHRSM1JNTjA5ZFFrTWZaeG9YaEFoNl9XNkdOai1qYlZjcUs4X2lQU3JVaE5SaUNkM3AwVVR1X0ZEbnZ0UVNpWjR2S3duZ1pFb0QwRmViS2ZKekJxSlZuTVF1ZnNMNF9PQjYwc1l5QUxZVUphR3ZDWnNUZ19EQ3VmMEYyRWJJNWFhU0NGLVZaUlYyVDhqekxvR25XckVKZnRwbXA?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T10:55:14.143292+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR2RtTXpQdDRjNWVId1dtcktlQWVrUWNJWDlRT2VVdDdOWXZNQmtqUDI3YmxRMFVzLUhXYUcydS1WN0JPYjZTUmZRR214OGJMcTBDZktpc2xaVmtEcFQ1aUU2Q0o4Q2x5cjUteUY1Q2JxR0xTYzZ4Y293ZDhRdjI0N2dfLTlidXlmU3JmNjM2Y2M2dw?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T10:55:22.376694+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZkxobmcxbnlDcm1fT3ZmdUZZaHhReHVqVzRKWWlDWWpCbXh1clNDOXpuR0Z0QTl3YlBkNF96bDk2aVVlM2lWalpzdFl0aVdWS1ZGMUNKc1hVYzI1Sk03RzNrWjRpWVdhLUhneG1WTHJsZklGNkhGYzdsOXlvTGtrTVh0NUZja3M?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:55:48.669172+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjV2tGQkNjUGN1Wm9nNDRCUV9CUmJZZW5fdExwYVAzUmhFQ2QyNUViQmRkY1pWOElpVzBoRnNVdENSallBemw3WWZkMVZGZnllRWVCTXNR?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:55:54.612547+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaUpRRFk5YzJGeGhReUNKR1Z1QTd3YlBRT2VYbktFNHpYbElmczFWc2M2YmU3ZnAwNEVxWEIzTTVEZG55UFZaa1ByVVZqSjY2VHdpbFF6RTNzdXFrVWRPeHdPWTdJS3JORjVtenFWWDA2d1g3YmNicWxGQW9jSE9oS2tQUlpoMmRCSDdZVHRhaTM2d1BzbkJpX182dzc?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T10:56:00.141616+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaTZtWjNPVlF6TTh1aU9aR3NwV0NubGhYVjNzSWwzeHdSX1VKeU1jSzBMNXljNGFWb3VTc25xUTVHcm1CaDIyY1VFZEZjWEhzQ0RaWXZuSmpIWmJmQWtVZlJhdU5pY0NQOWxCbEotQzhfWE5QZ29iNEx4YXlNSGFQTWpEbmdlUjFfYWRzTFp0alFTdnc?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:56:28.748409+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcHZRV2FWUzlDYVFjUVJ5d3lTMlZvdnRyNXdqc2VoQ3Q5TlVjeGxxWi1pamRmaE1aREdMM0FLNGU3dUlDOEVnZkU1R2x1dHJNUWZNemdNQURjUXVEVW1GQXJTYWxtSWQ5NHN6c08yaDhGWGQyQmxuTG1oLWoyeDdIUzVUeVQtTXZKWThEMTZ0M3lxT0pLMFJNVGFpTnZ3U1dtdnhWbVBoWWY?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T10:56:31.398400+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE55aGhCeWdYT1BkU0UtSF9pSmdPUnpDMTNIemVLWnByX3NPQzAzRnBIak10V1RBcXB0RUNpWk9TNXhMcnU2Rm13Mm16SDJYVzN1dF81MDZRVFFkd0pZRnZoOEdXal96THdmWkRoeEF2c0w3ZXVQQVVRdzA2VQ?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:16:48.486230+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCWUVTbVJhZ3h2OWtIUHdTLW41SVZJeW43TzM4Uko5VWlUSGVyalNtNlFZSzh3TjIzcUdIZS1rWkFHNDZXODFLajhpVWRKNFVCWk5PVTRfbjUyVXF6bVFfUncwRksyR0E3SktGbHZLR2kwTF9KUkJOZA?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:16:50.450957+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQczBVcDJ6UFBvaWduOGFXVWMwQWFCZmNHU2ZnMFltb2gwSWRXbnFrbkk4Z01tc016MXNsT1FGbV81enZQbDFOd19KN1pnNWxjOVpKdExVSmJ1SlExdnBPR1h5ZE5jWkFUd1k2ZEJrdHFrMVFOb3BfUDdCX2pHVjdzOUxmNWV4TnFxN01PY2djSk9IWUxlbjVmOHZ1eHdZYUczQm1obkxwaVhxYzlneXBsd0MtNNIBVkFVX3lxTFAwTVlsTnZVRVlyU19vQUxTeEg5Y1dfMklSbzgxYkxyRXQzVmxZaUhQZzVNTWwzS1BqVENpVUFOTktEOU80VnBEemk0ZDVOLTlNSG9NYlJ3?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:16:54.924790+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdDBHeFo0OVZDMDNSQ1lkOTNLMEZUM0ozaEJTQXlncjhxOElDOUlhQ0MwLXVIUDg2VnpGQmkxWXpxeWdIMjNFemdBMC1nSHVkamhVSFAzLThWX2tNdWREMEp2MWdDamNnRDlZT2lmVUJpbzFfbENNTEZhamlpdTloM3BVS2JqeEF0ZFJXY1E3QmU0cl9UdXVLUWp6R0ZQa2hCN1JRNWM5QXF3V183?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T11:16:57.478535+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOdzl1RDR0d3I2YnF6ZUxFak9Na01QU3h2TmRIbVRVX1p0T2gySHQydDR0dXNUZVZOdUUyOW5wVEFlb29uOFd4WElkTE0xa3NNd1F6ckRQZ3FhUVZWSHVhWFRacVRJelRTVHk1Z0tOYzk1NnNyZENqX21QZDlMckpjT2RnNG9uX2J2Y080NUVlQ1ZaaXdaYlVLd0NjSXhDNDhZeWtMaVFkSGpFdUtiU2tvVF9tX1ZrakhVbUxCQS1KbXJvX2JZeHV1Q3cyS3hrbHJxdTZDa1Bsakx0a3V5cGNnYmxkX0JDaFNiQ0VVUnZoOHowb3Y0aDRUUWZ0bDFUWjU1b3hFdTJjVS0yYzhtamIxM21qNFp6bFpPY1c5WUdOZlhyblVUU3hBWGdSbnFFdTRPXzFMSklYV1BlN2E2Uk0xdVNkTFpzdzR4bkI2WFJRQTUwOEdHek15eFctNjlvT3U4MldlV2RNQW5NQkVHV2ZpVjM1dFNtN2pQRkVjSGw5djR0c1FTZXRHaXoxNHJkWDNKU1N5cms4N0NuUG5yYVhaY0lnaTAzYkpEVTcyUUR3WEh6blpfMm56YzhDbUh2bTQ?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:17:01.585528+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tZHZzc3I4TGlzU19Zb2pMQ1RQRnQ0eEdmYS1aVHRWS241bWExWDFJa2pheHh4SmpHZXpTeTRXcWNaeDlMVjlZRG5kN1RfZG1pd0d2SVJR?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:17:03.619932+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HaXpRUTVUa2xUZ1ZLZUFkcFc3Y1piZHF0bFZlQ1FMZjhNMUNWTW9PekVIZTNQcVNudlJ4Sl8wa1gzaVl0b01rcE9CUGdTUThIUzJuRmdaTU9pamtmbmRZakQxSktRQ0Zo0gFsQVVfeXFMTV82OXZEVUVxaTFJMFpGZTVEQ09FemNaS3hOdTZfMXhHd1BvWkd6cEdYbUlZTlZJdVZ0dFhpVG5Na0VIdFVDeUx3WjlXUzA5NC0yb0hhWE5LbngySzAybG1MLW8wRUpaRnEwWEhm?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T11:17:59.777289+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oR1U1WWpGZHNkLWNmczEwdmpCY04yeldrN1VzNXhVOXpzQlV2NWIyZGdsY0lWNHZsNzY0YTRGay1GczRsczFpaU52cVF3V0EyNUpMRTN0SEw1WHcwb1FvVHY3QndnQVpLbXpaSUxOUk5PVXc?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T11:18:06.630176+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOFg1dmE0YWJUUERNSm1nTWpxOFVNeDZsRlZIbGdJT0VHSFdLYVFfeFYtVW1FN05mdG5zV2lWbjRVb1dNYVlSYXluaWFPZWQwVkVwNjNjOTF1Y1VLT3BnNHJ3TUlJcUw3MVZpNTV2UFF0TXBjRFpIZ2RVSnF6MFBlS2IwUdIBlwFBVV95cUxPZVdXdjF6aW1pdGJSLW9OMzlTaTFNRnR1SHVPU1dWUG1STml5VXR6bWxrb1d3LTNnclNYUmxubWtYOVFNRl9KcGJEOXNWb0llR3U1YloxbnBzc1RUMGZSYjNkNlR0T2w3TW9pSHJVLVdPT3drLXhSWk1fZlM2b1gyQmVQYjl5b1B1cE9oeGdHeXgxeE5vQWFB?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:18:29.370327+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNNEp5OGtWZlRBcEJ1TDM4emJFWXp4T3g1MUEzeVBjNW1SaGxSYmRGSS11Mm5IYmM1VUxIU2pIQmJGREJhUHptU0xfV3A2UmFuQ1ZKTS1ieGt4Z1RZYmp0OGczM0ptVVlSbEw4c0s4NVVxR1FzeHNPQ3cxdFBpMTM2cGRFRDI0SkZkVG1odGRORDBLZ2dJb2VxUHhwaTh3OE5EaVYyS1llcUJvbU1qMkhVLThSSm1wTF9fbERheUk5dHg0OEZKc0VyRnVMc1ZwUldsYWM5SGRqNV8zRkZYNFptMXdCbm5oeF8tSldkLWpnZUltcHFGOVhkalJWRXNsMWx3emxBUXlSMW4zMTVualIwOG0yN1A1UzhDYnlkbEZFekM3OC1PSmFaYjBIZEZ1LUZ2cDBmanBEMnZEMlRKUVk4YjkwckZWYTNyLWpvYjYtQ3A3LTdpUVY3UUd0OHZyVnJfeFM4bTF0blhBUDVydWl4NjRWVmpiRTN3SDBvT2hLMU1QVXV4aU50ekh1cGk0NUpaaVRhTk5PdXB4dWZTR0xYQjhpLWxTQlVOa2hVQkUwWUxocEQydWJUa0ZueEoyZEk?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:18:32.561512+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOVS1lbG1FQ1h4NnpQdm4yakFxRHFGajBsVUFaU1M2ZkxVcHZueGNsNlo4SDJka3ViNlQ0aFh4ckl4aGlJMlR1ekZRRy1ocE1KQkJkOXpXR0QwNmxsNkQxS0xKU3A0al9IaGpPNkR2aTVRbVBwaDFmcy1USmpuTTRGdTFKdWU5X2gwQWJvTlNxSGUwR092LW03V1FiZWZ1SDgwcktGYUZDbGdBRW5tMkVUSExINzNOeHU1MlNfU3o0QmVLRWY5elZDNzRuWFhlMDVqOW0xS2djR05YQldORXZXaDMzN0dCYVNWbUJLenRQTzhTNy1SYXI2dzF2b2wtUklTTV9UXzN2WXc4VVFqaldqajM1VFp6UjgyY0dFU2k1c1JiWnhQZmtYV3ZSZEtqMU5iUERJWjh2S1BYcmhZWG5wYW9PZkRPS1AzZ0UwYUhSN0JqNUZhNHAtdjJUWEktTzhTVDdlNW5ac2ktcFdXb0tBczlxLWYxZkNjRHlmRHF6dzN5cE9SNF8zR2tnS1YzcnZKVy1sZUlNXy1wWnBYUHlacW9IWmk2MXJfMjFzYXRpUjhlSklFa3VvVlVNU1NGVlU?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:23:47.792668+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaUpRRFk5YzJGeGhReUNKR1Z1QTd3YlBRT2VYbktFNHpYbElmczFWc2M2YmU3ZnAwNEVxWEIzTTVEZG55UFZaa1ByVVZqSjY2VHdpbFF6RTNzdXFrVWRPeHdPWTdJS3JORjVtenFWWDA2d1g3YmNicWxGQW9jSE9oS2tQUlpoMmRCSDdZVHRhaTM2d1BzbkJpX182dzc?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T11:24:21.663913+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxPTTZwSzlodU9HVDg4SzRpUnQ3RVFGQlVtd3dwSFJ1dFVaRjBJd2NJaWJlXy1jaEQ1dFpNWDNrTlU2MlZheDFPNjVTNUdJV3psWmNuQ1k5NmQweWpCVnpDNVJwb0pkUXJWLVc0TXNoYS1zU2dmVHR2T0tOSDNkaEQ4MTEzNVdmTE5sY3ZrUWd3eGVHOXRSWU4wS3VpbkdUYkJuNEdFamY4QWJseWhReGJjUzNMWkU5TDVfRDc3eXJMa1B4a0pKcnpaV2RPMzd5SlZKNm5sZ3NubDNWSjVMaURlQ2lnb1FLMXFvMzdCa0pTcVVTT0JrX01wZzJYTTR1RFlMODdGejdBdVZtTlhaaGpuTkh5U1BtUFRucGlzVmRMZ2phZ2NWUXY0ZGd4cFFFLUJONDZuNmRaQV9JaUNiZFVVbVBPS3NBMk5ZY1ZIM0tqUmV0eTNiWk5FQzdHVWpNNzkwZ3piZTkwaTFkdHh1WVhvNHRpMURkRE5KamxVWDFSd3Y2VjA5R2ZoQUpYY2R3aUF0QjctYmxyYnpFOEQ5WXFDWml5Y2ZhRFY1ZzJQZGwtVTJFNzMxMjN3TmFIMDNZRjg?oc=5",
+      "status": "high",
+      "timestamp": "2025-10-17T11:33:26.729225+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1GSUVKTkxaeFJ5NGhtQmJicE16SHVMeDZnNUhvcHk2ZWhsdU1Ec3pMZmUzM3dfUTE1aWpnRWEtVXZKdUQ0cGwwUUlrWFRhaWZUcDV3cFZ5UU1LeWNnOXFUbkJkcjVTOWJHUm1KMkVSdzk2QkNGb2xuOGM5Q1dHZw?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T14:32:12.312400+09:00",
+      "reason": null
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaDJzMmNpMkxmeWItc3hZQmFxdHRSM1JNTjA5ZFFrTWZaeG9YaEFoNl9XNkdOai1qYlZjcUs4X2lQU3JVaE5SaUNkM3AwVVR1X0ZEbnZ0UVNpWjR2S3duZ1pFb0QwRmViS2ZKekJxSlZuTVF1ZnNMNF9PQjYwc1l5QUxZVUphR3ZDWnNUZ19EQ3VmMEYyRWJJNWFhU0NGLVZaUlYyVDhqekxvR25XckVKZnRwbXA?oc=5",
+      "status": "low",
+      "timestamp": "2025-10-17T14:48:15.083347+09:00",
+      "reason": null
+    }
+  ]
+}

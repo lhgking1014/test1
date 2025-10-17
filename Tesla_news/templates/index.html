@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tesla News Pulse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Tesla 24시간 뉴스</h1>
+      <p class="subtitle">매일 오전 7시 (KST) 기준 최신 뉴스 요약</p>
+      <p class="timestamp">최종 업데이트: {{ updated_at }}</p>
+    </header>
+    <main>
+      <section class="news-list">
+        {% if items %}
+          {% for item in items %}
+            <article class="news-card">
+              <div class="news-meta">
+                <span class="source">{{ item.source }}</span>
+                <span class="published">{{ item.published_at }}</span>
+              </div>
+              <h2><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h2>
+              <p class="summary">{{ item.summary }}</p>
+            </article>
+          {% endfor %}
+        {% else %}
+          <p class="empty">표시할 뉴스가 없습니다. 잠시 후 다시 확인해주세요.</p>
+        {% endif %}
+      </section>
+    </main>
+  </body>
+</html>
