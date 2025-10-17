@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Sequence, Set
 from urllib.parse import quote_plus
 from xml.etree import ElementTree as ET
 
@@ -419,7 +419,12 @@ def main() -> None:
     logging.info("Stored %d news items to %s", len(items), DATA_PATH)
 
 
-def collect_news() -> List[NewsItem]:
+def collect_news(
+    exclude_keys: Sequence[str] | None = None,
+    initial_hours: int = 24,
+    max_hours: int = 72,
+) -> List[NewsItem]:
+    excluded: Set[str] = set(filter(None, exclude_keys or []))
     google_feeds = [
         {
             "locale": "KR",
@@ -463,13 +468,17 @@ def collect_news() -> List[NewsItem]:
     for item in naver_site_feed:
         item.source = "Naver (via Google)"
     naver_items.extend(naver_site_feed)
-    recent_naver_items = filter_recent_items(naver_items, hours=24)
+    recent_naver_items = filter_recent_items(naver_items, hours=initial_hours)
     if not recent_naver_items:
-        logging.warning("No Naver news items found within the last 24 hours.")
+        logging.warning("No Naver news items found within the selected recency window.")
     else:
-        logging.info("Keeping %d Naver items from the past 24 hours", len(recent_naver_items))
+        logging.info(
+            "Keeping %d Naver items from the past %d hours",
+            len(recent_naver_items),
+            initial_hours,
+        )
 
-    collected.extend(recent_naver_items)
+    collected.extend(naver_items)
 
     x_posts = fetch_x_posts(limit=3)
     collected.extend(x_posts)
@@ -477,20 +486,45 @@ def collect_news() -> List[NewsItem]:
     deduped = deduplicate(collected)
     deduped.sort(key=get_item_datetime, reverse=True)
     prioritized = prioritize_autonomy(deduped)
-    recent_items = filter_recent_items(prioritized, hours=24)
-    if len(recent_items) < len(prioritized):
-        logging.info("Filtered out %d items older than 24 hours", len(prioritized) - len(recent_items))
-    prioritized_recent = ensure_naver_presence(recent_items, recent_naver_items)
-    trimmed = prioritized_recent[:MAX_ITEMS]
 
-    if len(trimmed) < MIN_ITEMS:
-        logging.warning(
-            "Only %d news items within the last 24 hours (minimum expected: %d)",
-            len(trimmed),
-            MIN_ITEMS,
+    current_hours = max(1, initial_hours)
+    max_hours = max(current_hours, max_hours)
+
+    def pick_naver_candidates(window_hours: int) -> List[NewsItem]:
+        scoped = filter_recent_items(naver_items, hours=window_hours)
+        if scoped:
+            return scoped
+        return naver_items
+
+    while True:
+        scoped_items = filter_recent_items(prioritized, hours=current_hours)
+        if not scoped_items:
+            scoped_items = prioritized
+
+        naver_candidates = pick_naver_candidates(current_hours)
+        ensured = ensure_naver_presence(scoped_items, naver_candidates)
+        filtered = [
+            item
+            for item in ensured
+            if (item.url or item.title) not in excluded
+        ]
+        trimmed = filtered[:MAX_ITEMS]
+
+        if len(trimmed) >= MIN_ITEMS or current_hours >= max_hours:
+            if len(trimmed) < MIN_ITEMS:
+                logging.warning(
+                    "Only %d news items available after excluding low relevance items (minimum expected: %d)",
+                    len(trimmed),
+                    MIN_ITEMS,
+                )
+            return trimmed
+
+        next_window = min(current_hours + 12, max_hours)
+        logging.info(
+            "Expanding news window to %d hours to replace excluded items.",
+            next_window,
         )
-
-    return trimmed
+        current_hours = next_window
 
 
 if __name__ == "__main__":
